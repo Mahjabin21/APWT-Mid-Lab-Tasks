@@ -14,7 +14,7 @@ export class FacultiesService {
     ){}
 
 
-    //create product
+    
     async create(dto:createFacultyDto){
         const faculties = this.facultiesRepo.create(dto); 
         const saved= await this.facultiesRepo.save(faculties);
